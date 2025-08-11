@@ -1,0 +1,26 @@
+Watch(() => MainMenuGuiLayer.Current.m_currentPageEnum.ToString()); // Signature: Watch(Func<string>)
+
+Watch(() => // Signature: Watch(Func<string>) // just another example
+	{
+		StringBuilder sb = new StringBuilder();
+		var agents = Player.PlayerManager.PlayerAgentsInLevel;
+		for (int i = 0; i < agents.Count - 1; i++) {
+			var agent = agents[i];
+			sb.Append(agent.Owner.NickName);
+			sb.Append(", ");
+		}
+		sb.Append(agents[agents.Count-1].Owner.NickName);
+		return sb.ToString();
+	}
+);
+
+foreach (var player in Player.PlayerManager.PlayerAgentsInLevel) 
+{
+	Watch<Player.PlayerAgent>(player, obj => { // Signature: Watch<T>(T instance, Func<T, string>)
+			return $"{obj.Owner.NickName} - {obj.Position} - {obj.Inventory.WieldedItem?.PublicName ?? "EmptyHands"}";
+		}
+	);
+}
+
+Watch<Player.LocalPlayerAgent>(CurrentTarget, obj => obj.CamPos); // Signature: Watch<T>(object instance, Func<T, string>)
+

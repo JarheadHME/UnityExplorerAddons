@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityExplorerAddons", "UnityExplorerAddons\UnityExplorerAddons.csproj", "{844EF3FF-6C52-48D9-BDA4-99914E415FDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{844EF3FF-6C52-48D9-BDA4-99914E415FDC}.Debug|x64.ActiveCfg = Debug|x64
+		{844EF3FF-6C52-48D9-BDA4-99914E415FDC}.Debug|x64.Build.0 = Debug|x64
+		{844EF3FF-6C52-48D9-BDA4-99914E415FDC}.Release|x64.ActiveCfg = Release|x64
+		{844EF3FF-6C52-48D9-BDA4-99914E415FDC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6178309-EDF4-45EA-92A4-B3DDCD826652}
+	EndGlobalSection
+EndGlobal
