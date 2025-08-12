@@ -132,7 +132,7 @@ namespace UnityExplorerAddons.Modules
                     if (instance != null && instance.GetType().IsSubclassOf(typeof(UnityEngine.Object)) && instance.TryCast<UnityEngine.Object>() == null)
                     {
                         ExplorerCore.LogWarning($"Expression Watch index {i} instance is null");
-                        m_simpleToRemove.Add(i);
+                        m_expToRemove.Add(i);
                         continue;
                     }
 
@@ -147,7 +147,7 @@ namespace UnityExplorerAddons.Modules
                     catch (Exception ex)
                     {
                         ExplorerCore.LogWarning($"Exception occurred while evaluating Expression Watch index {i}, removing.\n{ex}");
-                        m_simpleToRemove.Add(i);
+                        m_expToRemove.Add(i);
                         continue;
                     }
 

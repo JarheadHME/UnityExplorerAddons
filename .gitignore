@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Just a quick saved file I planned to use to demonstrate the watches
+/UnityExplorerAddons/ExampleWatches.txt
